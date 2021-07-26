@@ -1,0 +1,264 @@
+@import url('//fonts.googleapis.com/css?family=Source+Code+Pro'); /*getting rid of mixed content errors*/
+
+/* {
+  border: 1px solid pink;
+} */
+
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: Futura, sans-serif;
+  /* background-color:rgb(65, 50, 11); */
+  background-image: url("https://jooinn.com/images1280_/sunset-flight.jpg");
+}
+
+button, input[type="button"], input[type="submit"]  {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.login-logo {
+  margin-bottom: 0;
+}
+
+.welcome {
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.seat {
+  background-color: rgb(105, 237, 100);
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.taken {
+  background-color: #e03844;
+}
+
+.res-button {
+  margin: 15px 0 0 0;
+  padding: 15px;
+  font-family: Futura, sans-serif;
+  text-transform: uppercase;
+}
+
+.row-num {
+  display: inline-block;
+  width: 15px;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: top;
+}
+
+.res-status {
+  padding: 15px 0;
+  color: cornflowerblue;
+}
+
+.selected {
+  background-color: rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 2px cornflowerblue solid;
+}
+
+label.search {
+  width: 100px;
+}
+
+button.book {
+  margin-left: 20px;
+}
+
+form {
+  padding: 20px;
+  /* background-color: #e03844; */
+}
+
+input.search-flight, input.search-user {
+  padding: 8px;
+  width: 400px;
+}
+
+.monospace {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+
+}
+
+.header {
+  height: 100px;
+}
+
+img {
+  width: 200px;
+  float: right;
+}
+
+.login-form {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.login-label {
+  display: inline-block;
+  width: 100px;
+  font-family: 'Source Code Pro', monospace;
+  text-transform: uppercase;
+}
+
+.login-field {
+  margin: 10px 10px 10px 0;
+  padding: 15px 15px 15px 0;
+}
+
+.login-button {
+  margin-bottom: 15px;
+}
+
+.logout {
+  /* background-color: rgb(117, 101, 101); */
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.logout-button {
+  float: right;
+  background-color: #3ec4d2;
+  color: white;
+  margin-top: 20px;
+}
+
+.chat-button {
+  float: left;
+  background-color: #4ad23e;
+  color: rgb(180, 14, 14);
+  margin-top: 20px;
+}
+
+.header-flights {
+  height: 80px;
+  width: 620px;
+}
+
+.select-city {
+  width: 400px;
+  padding: 15px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: white;
+  color: grey;
+  outline: none;
+  border-radius: 0;
+  /*ARROW STYLE*/
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.select-city:focus {
+  background-image:
+    linear-gradient(45deg, rgba(62, 196, 210, 1.00) 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, rgba(62, 196, 210, 1.00) 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: rgba(62, 196, 210, 1.00);
+  outline: 0;
+}
+
+.flight-details {
+  flex: 3;
+}
+
+.flex-container {
+  display: flex;
+  margin: 10px 0;
+}
+
+.flex-header {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-logout {
+  flex: 1;
+  align-self: end;
+  margin-bottom: 15px;
+}
+
+.cancel {
+  margin-top: 0;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 650px) {
+    input.search-flight, input.search-user {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 492px) {
+    .select-city {
+        width: 100%;
+        display: block;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+    h2 {
+      font-size: 1em;
+    }
+    img {
+      width: 115px;
+    }
+}
+
+@media only screen and (max-width: 318px) {
+  .seat {
+    width: 40px;
+    height: 40px;
+  }
+}
